@@ -1,10 +1,10 @@
-# Fluxora Backend
+# Wallie de Sensei Backend
 
-API server for the Fluxora treasury streaming protocol. Provides REST endpoints and real-time WebSocket connections for interacting with Fluxora smart contracts on Stellar.
+API server for the Wallie de Sensei treasury streaming protocol. Provides REST endpoints and real-time WebSocket connections for interacting with Wallie de Sensei smart contracts on Stellar.
 
 ## Overview
 
-The Fluxora Backend serves as the middleware layer between the frontend UI and the Soroban smart contracts. It provides:
+The Wallie de Sensei Backend serves as the middleware layer between the frontend UI and the Soroban smart contracts. It provides:
 
 - RESTful API for contract interaction
 - WebSocket support for real-time stream updates
@@ -15,8 +15,8 @@ The Fluxora Backend serves as the middleware layer between the frontend UI and t
 
 ## Related Repositories
 
-- **[fluxora-contracts](https://github.com/Fluxora-Org/Fluxora-Contracts)** — Soroban smart contracts (stream, factory, governance)
-- **fluxora-frontend** — Dashboard and recipient UI (separate repository)
+- **[wallie-de-sensei-contracts](https://github.com/Wallie-de-sensei/Wallie-de-sensei-Contracts)** — Soroban smart contracts (stream, factory, governance)
+- **wallie-de-sensei-frontend** — Dashboard and recipient UI (separate repository)
 
 ## Tech Stack
 
@@ -39,8 +39,8 @@ The Fluxora Backend serves as the middleware layer between the frontend UI and t
 
 ```bash
 # Clone the repository
-git clone https://github.com/Fluxora-Org/Fluxora-Backend.git
-cd Fluxora-Backend
+git clone https://github.com/Wallie-de-sensei/Wallie-de-sensei-Backend.git
+cd Wallie-de-sensei-Backend
 
 # Install dependencies
 npm install
@@ -152,7 +152,7 @@ See [API_BEHAVIOR.md](./API_BEHAVIOR.md) for detailed API behavior documentation
 ## Project Structure
 
 ```
-fluxora-backend/
+wallie-de-sensei-backend/
 ├── src/
 │   ├── config/          # Configuration (database, env)
 │   ├── controllers/     # Request handlers
