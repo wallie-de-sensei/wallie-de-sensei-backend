@@ -1,7 +1,7 @@
 {
-  "name": "mentorsmind-backend",
+  "name": "wallie-de-sensei-backend",
   "version": "1.0.0",
-  "description": "Mentor recommendation engine API for MentorsMind",
+  "description": "API server for Wallie de Sensei - Treasury streaming protocol",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
