@@ -64,9 +64,9 @@ NODE_ENV=development
 # Database
 DB_HOST=localhost
 DB_PORT=5432
-DB_USER=fluxora
+DB_USER=wallie-de-sensei
 DB_PASSWORD=your_password
-DB_NAME=fluxora_db
+DB_NAME=wallie-de-sensei db
 
 # Redis
 REDIS_HOST=localhost
