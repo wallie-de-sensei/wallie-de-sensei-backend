@@ -1,3 +1,10 @@
+# OpenAPI Specification for Wallie de Sensei Backend
+# This document describes all available REST API endpoints, request/response schemas,
+# authentication requirements, and error handling for the Wallie de Sensei platform.
+#
+# For detailed API behavior documentation, see API_BEHAVIOR.md
+# For contribution guidelines, see CONTRIBUTING.md
+
 openapi: 3.1.0
 info:
   title: MentorsMind API
@@ -24,6 +31,16 @@ info:
     All on-chain / API amount fields (`depositAmount`, `ratePerSecond`) are
     serialized as **decimal strings** to preserve precision for values that
     exceed `Number.MAX_SAFE_INTEGER` in JavaScript.
+
+    ## Authentication
+
+    Most endpoints require JWT authentication via Bearer token in the Authorization header.
+    Obtain tokens through the `/users/login` endpoint. Tokens expire after 24 hours by default.
+
+    ## Rate Limiting
+
+    API requests are rate-limited per IP address to prevent abuse.
+    Default limits apply unless otherwise specified in endpoint documentation.
 
 servers:
   - url: http://localhost:3000/api/v1
